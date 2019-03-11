@@ -1,6 +1,24 @@
 [alias]
     # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html
 
+    st = status
+    ss = status --short --branch
+    ci = commit --verbose
+    co = checkout
+    di = diff
+    amend = commit --amend
+    aa = add --all
+    ff = merge --ff-only
+    noff = merge --no-ff
+    fa = fetch --all
+    pom = push origin master
+    ds = diff --stat=160,120
+    dh1 = diff HEAD~1
+    # Show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
     # `git remote prune origin`: remove remote-tracking branches that were deleted from the remote repo
     # `git gc`: cleanup unnecessary files and optimize the local repository
     # `git clean -df`: remove untracked files and directories from the working tree
@@ -44,10 +62,52 @@
     # Displays committers in descending order of number of commits
     who = shortlog --numbered --summary --email --no-merges --since="3 months"
 
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+
+[core]
+    # Use custom `.gitignore` and `.gitattributes`
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+
+    # Treat spaces before tabs and all kinds of trailing whitespace as an error
+    # [default] trailing-space: looks for spaces at the end of a line
+    # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+    # Make `git rebase` safer on macOS
+    # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+    trustctime = false
+
+    # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+    # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+    precomposeunicode = false
+
+    # Speed up commands involving untracked files such as `git status`.
+    # https://git-scm.com/docs/git-update-index#_untracked_cache
+    untrackedCache = true
+
 [color]
     # color opts: normal, black, red, green, yellow, blue, magenta, cyan, or white
     ui = auto
     interactive = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold # line info
+    old = red # deletions
+    new = green # additions
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
@@ -59,9 +119,22 @@
 
 [diff]
     tool = mvimdiff
+    # Detect copies as well as renames
+    renames = copies
 
 [difftool]
     prompt = false
+
+[diff "bin"]
+    # Use `hexdump` to diff binary files
+    textconv = hexdump -v -C
+
+[help]
+    # Automatically correct and execute mistyped commands
+    autocorrect = 1
+
+[merge]
+    tool = vimdiff
 
 [pretty]
     # tut: http://gitimmersion.com/lab_10.html
@@ -70,4 +143,7 @@
     nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
 
 [push]
+    # https://git-scm.com/docs/git-config#git-config-pushdefault
     default = simple
+    # Make `git push` push relevant annotated tags when pushing branches out.
+    followTags = true

@@ -1,2 +1,12 @@
+.netrwhist
 vim/.netrwhist
 vim/.viminfo
+vim/autoload/plug.vim
+vim/bundle
+vim/sessions
+
+# OS or Editor files
+._*
+.DS_Store
+Thumbs.db
+Desktop.ini

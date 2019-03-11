@@ -2,6 +2,7 @@
 ._*
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Files that might appear on external disks
 .Spotlight-V100
@@ -18,3 +19,17 @@ Thumbs.db
 *.sass-cache
 *.sw?
 *.vi
+
+.bundle
+db/*.sqlite3
+log/*.log
+tags
+!tags/
+tmp/**/*
+!tmp/cache/.keep
+vim/view
+
+.project-notes
+.vimrc.local
+.bash_profile.local
+node_modules
