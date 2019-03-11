@@ -244,13 +244,17 @@ changes made to those submodules.
 
 Inspiration and code was taken from many sources, including:
 
+* [@necolas](https://github.com/necolas) (Nicolas Gallagher)
+  [https://github.com/necolas/dotfiles](https://github.com/necolas/dotfiles)
 * [@mathiasbynens](https://github.com/mathiasbynens) (Mathias Bynens)
   [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [@garybernhardt](https://github.com/garybernhardt) (Garry Bernhardt)
+  [https://github.com/garybernhardt/dotfiles](https://github.com/garybernhardt/dotfiles)   
 * [@tejr](https://github.com/tejr) (Tom Ryder)
   [https://github.com/tejr/dotfiles](https://github.com/tejr/dotfiles)
 * [@gf3](https://github.com/gf3) (Gianni Chiappetta)
   [https://github.com/gf3/dotfiles](https://github.com/gf3/dotfiles)
 * [@cowboy](https://github.com/cowboy) (Ben Alman)
   [https://github.com/cowboy/dotfiles](https://github.com/cowboy/dotfiles)
-* [@alrra](https://github.com/alrra) (CÃ£tÃ£lin MariÅŸ)
+* [@alrra](https://github.com/alrra) (C?t?lin Mari?)
   [https://github.com/alrra/dotfiles](https://github.com/alrra/dotfiles)
