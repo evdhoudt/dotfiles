@@ -148,10 +148,6 @@ following way:
 
 Further details are in the `bash_prompt` file.
 
-Screenshot:
-
-![](http://i.imgur.com/DSJ1G.png)
-
 ### Local/private Bash and Vim configuration
 
 Any special-case Vim directives local to a machine should be stored in a
@@ -256,5 +252,5 @@ Inspiration and code was taken from many sources, including:
   [https://github.com/gf3/dotfiles](https://github.com/gf3/dotfiles)
 * [@cowboy](https://github.com/cowboy) (Ben Alman)
   [https://github.com/cowboy/dotfiles](https://github.com/cowboy/dotfiles)
-* [@alrra](https://github.com/alrra) (Cãtãlin Mariş)
+* [@alrra](https://github.com/alrra) (CÃ£tÃ£lin MariÅŸ)
   [https://github.com/alrra/dotfiles](https://github.com/alrra/dotfiles)
