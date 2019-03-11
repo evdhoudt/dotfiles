@@ -29,3 +29,6 @@
 [submodule "vim/bundle/vim-IndentConsistencyCopAutoCmds"]
 	path = vim/bundle/vim-IndentConsistencyCopAutoCmds
 	url = git://github.com/inkarkat/vim-IndentConsistencyCopAutoCmds.git
+[submodule "vim/bundle/vim-IndentConsistencyCop"]
+	path = vim/bundle/vim-IndentConsistencyCop
+	url = git://github.com/inkarkat/vim-IndentConsistencyCop.git
