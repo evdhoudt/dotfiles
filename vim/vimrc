@@ -26,13 +26,15 @@ if has("autocmd")
 endif
 
 if has("syntax")
-    " Enable syntax highlighting
-    syntax enable
     " Set 256 color terminal support
     set t_Co=256
+    " Enable syntax highlighting
+    syntax enable
+    " Set colorscheme
+    let g:solarized_termtrans = 1
+    let g:solarized_termcolors=256
     " Set dark background
     set background=dark
-    " Set colorscheme
     silent! colorscheme solarized
 endif
 
